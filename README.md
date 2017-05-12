@@ -1,6 +1,6 @@
 Check out my calculator!
 
-To use this calculator run DIRECTIONS
+To use this calculator run npm start
 
 It should work as the IOS version does including edge cases. It was created with a local state in the calculator component. All of the logic is in this component. The state holds two terms, and an answer. There is a separate indicator for status which informs whether or not an operation is 'in progress'.
 
