@@ -7,6 +7,9 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "enzyme": "^2.8.2",
+    "moca": "^0.4.3",
+    "react-addons-test-utils": "^15.0.0-rc.2",
     "react-scripts": "0.9.5"
   },
   "scripts": {
