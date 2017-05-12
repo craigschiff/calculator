@@ -1,7 +1,3 @@
-// for evaluate ideally would refactor too - test that function when have it running
-
-// where to calc display? on evaluators or on mount?
-// TESTS!
 
 import React, { Component } from 'react'
 import Display from './display'
@@ -33,8 +29,6 @@ export default class Calculator extends Component {
     this.handleEvaluate = this.handleEvaluate.bind(this)
     this.handleOperation = this.handleOperation.bind(this)
     this.handleSignAndPercent = this.handleSignAndPercent.bind(this)
-    this.handleKeyDown = this.handleKeyDown.bind(this)
-
   }
   handleNumberClick(event){
     event.preventDefault()
@@ -63,7 +57,6 @@ export default class Calculator extends Component {
         this.setState({termOne: termOne, display: termOne})
         }
         break
-      // case 'answer':
 
       default:
         if (termOne && termTwo){
@@ -110,7 +103,9 @@ export default class Calculator extends Component {
         this.setState({termOne: termTwo, termTwo: 0, answerStatus: 'none'})
       }
     }
-
+    this.setStatus(operation)
+  }
+  setStatus(operation){
     switch (operation) {
       case 'multiply':
         this.setState({status: '*'})
@@ -128,9 +123,7 @@ export default class Calculator extends Component {
         return
     }
   }
-  handleKeyDown(event){
-    debugger
-  }
+
   performOperation(status){
     let termOne = parseFloat(this.state.termOne)
     let termTwo = parseFloat(this.state.termTwo)
