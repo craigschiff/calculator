@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+}
+
+
+
+button {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+
+.calc {
+  background: lightgray;
+  width: 400px;
+}
+
+.display {
+  background: #202020;
+  color: #fff;
+  width: 400px;
+  height: 100px;
+  font-size: 80px;
+  bottom: 0px;
+  position: relative;
+}
+.container {
+  height: 400px;
+  width: 400px;
+}
+.nums {
+  background: linear-gradient(to bottom, #d7d8da 0%, #f1f1f2 100%);
+  font-size: 36px;
+  height: 100px;
+  width: 100px;
+  border-left: 0.5px solid #000;
+  border-bottom: 0.5px solid #000;
+  position: relative;
+}
+.operation {
+  background: linear-gradient(to bottom, #f89312 0%, orange 100%);
+  font-size: 36px;
+  height: 100px;
+  width: 100px;
+  border-right: 0.5px solid #000;
+  border-bottom: 0.5px solid #000;
+  border-left: 0.5px solid #000;
+
+}
+.top-operation {
+  background: linear-gradient(to bottom, #cacbcc 0%, #c8cacb 100%);
+  font-size: 36px;
+  height: 100px;
+  width: 100px;
+  border-left: 0.5px solid #000;
+  border-bottom: 0.5px solid #000;
+}
+
+#zero {
+  background: linear-gradient(to bottom, #d7d8da 0%, #f1f1f2 100%);
+  text-align: left;
+  font-size: 36px;
+  padding-left: 40px;
+  height: 100px;
+  width: 200px;
+  border-left: 0.5px solid #000;
+  border-bottom: 0.5px solid #000;
+
+}
+#minus {
+  font-size: 36px
+}
+#subtract {
+  font-size: 36px
+}
